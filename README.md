@@ -1,1 +1,2 @@
 # projeto-integrador-frontend--Pedro-Cocentino-
+O projeto apresentara uma pequena enciclopedia do meu jogo preferido: "Outer Wilds". Outer Wilds é um jogo de exploração espacial em mundo aberto onde o jogador tem o sistema solar inteiro para ser explorado. O projeto levará o usuário em uma jornada pelo universo de Outer Wilds *SEM DAR SPOILER*.
