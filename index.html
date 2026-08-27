@@ -6,42 +6,92 @@
 </head>
 <body>
 
-    <h1>Outer Wilds</h1>
-    <p>Este projeto tem como objetivo apresentar as principais curiosidades e mecânicas do jogo Outer Wilds.</p>
+    <header>
+        <h1>Outer Wilds</h1>
+        <p>Este projeto tem como objetivo apresentar as principais curiosidades e mecânicas do jogo Outer Wilds.</p>
+    </header>
 
-    <img src="assets/images/Solar-system-Outer-Wilds.jpg" alt="Sistema solar natal dos hearthianos">
+    <main>
+        <section>
+            <h2>Sobre o jogo</h2>
+            <img src="assets/images/Solar-system-Outer-Wilds.jpg" alt="Sistema solar natal dos hearthianos">
 
-    <ul>
-        <li>Sistema solar em loop temporal de 22 minutos</li>
-        <li>Exploração espacial livre, sem tutoriais explícitos</li>
-        <li>Nave espacial construída pelos Hearthianos</li>
-    </ul>
+            <ul>
+                <li>Sistema solar em loop temporal de 22 minutos</li>
+                <li>Exploração espacial livre, sem tutoriais explícitos</li>
+                <li>Nave espacial construída pelos Hearthianos</li>
+            </ul>
+        </section>
 
-    <table border="1">
-        <tr>
-            <th>Planeta</th>
-            <th>Característica</th>
-        </tr>
-        <tr>
-            <td>Timber Hearth</td>
-            <td>Planeta natal dos Hearthianos, coberto de florestas</td>
-        </tr>
-        <tr>
-            <td>Brittle Hollow</td>
-            <td>Planeta gelado que se desintegra e cai em um buraco negro</td>
-        </tr>
-        <tr>
-            <td>Giant's Deep</td>
-            <td>Planeta oceânico com tornados que levam à sua ilha núcleo</td>
-        </tr>
-    </table>
+        <section>
+            <h2>Planetas</h2>
+            <table border="1">
+                <tr>
+                    <th>Planeta</th>
+                    <th>Característica</th>
+                </tr>
+                <tr>
+                    <td>Timber Hearth</td>
+                    <td>Planeta natal dos Hearthianos, coberto de florestas</td>
+                </tr>
+                <tr>
+                    <td>Brittle Hollow</td>
+                    <td>Planeta gelado que se desintegra e cai em um buraco negro</td>
+                </tr>
+                <tr>
+                    <td>Giant's Deep</td>
+                    <td>Planeta oceânico com tornados que levam à sua ilha núcleo</td>
+                </tr>
+            </table>
+        </section>
 
-    <p>
-        Saiba mais no
-        <a href="https://www.mobiusdigitalgames.com/outer-wilds.html" target="_blank" rel="noopener noreferrer">
-            site oficial do jogo
-        </a>.
-    </p>
+        <section>
+            <h2>Inscreva-se para a expedição</h2>
+            <form>
+                <fieldset>
+                    <legend>Dados do explorador</legend>
+
+                    <label for="nome">Nome do explorador:</label><br>
+                    <input type="text" id="nome" name="nome" required><br><br>
+
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Detalhes da expedição</legend>
+
+                    <label for="planeta-favorito">Planeta favorito:</label><br>
+                    <select id="planeta-favorito" name="planeta-favorito">
+                        <option value="timber-hearth">Timber Hearth</option>
+                        <option value="brittle-hollow">Brittle Hollow</option>
+                        <option value="giants-deep">Giant's Deep</option>
+                    </select><br><br>
+
+                    <label for="data-loop">Data do seu primeiro loop:</label><br>
+                    <input type="date" id="data-loop" name="data-loop" min="2019-05-30" max="2026-08-27"><br><br>
+
+                    <label for="mensagem">O que você espera descobrir no espaço?</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="4"></textarea><br><br>
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Enviar inscrição</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Saiba mais no
+            <a href="https://www.mobiusdigitalgames.com/outer-wilds.html" target="_blank" rel="noopener noreferrer">
+                site oficial do jogo
+            </a>.
+        </p>
+    </footer>
 
 </body>
 </html>
