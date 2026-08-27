@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Outer Wilds</title>
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -13,6 +12,16 @@
     </header>
 
     <main>
+        <section>
+            <h2>Trailer do jogo</h2>
+            <!-- escolhi o preload="metadata" porque o video não precisa ser carregado inteiro assim que a pagina é aberta(o video é opcional), mas, acho interessante que algumas informações basicas sejam carregadas logo. -->
+            <video controls width="640" preload="metadata" poster="assets/images/trailer-capa.jpg">
+                <source src="assets/video/trailer-reveal.webm" type="video/webm">
+                <source src="assets/video/trailer-reveal.mp4" type="video/mp4">
+                <!-- não faz sentido colocar legendas nesse video, é so música instrumental -->
+                <p>Seu navegador não suporta a reprodução deste vídeo.</p>
+            </video>
+        </section>
         <section>
             <h2>Sobre o jogo</h2>
             <img src="assets/images/Solar-system-Outer-Wilds.jpg" alt="Sistema solar natal dos hearthianos">
