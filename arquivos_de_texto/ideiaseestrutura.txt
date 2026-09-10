@@ -1,0 +1,11 @@
+formulario:
+trocar a parte de criar explorador para "criar planeta"
+
+*pagina inicial:
+nome do jogo(logo)
+descrição pequena do projeto(explicar aqui a parte do spoiler)
+sinopse rapida 
+trailer
+escolher um planeta pra viajar
+links externos(site do jogo e talvez algo mais)
+
