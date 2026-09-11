@@ -3,12 +3,36 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    zoom: 125%;
+    p{
+        margin-top: 80px;
+    }
     /*wallpaper do site*/
     background-image: url("../assets/images/background-principal.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    /*fonte*/
+    font-family: 'Space Mono', monospace;
+    color: #7fffd4;
+    text-shadow: 0 0 6px rgba(127, 255, 212, 0.8);
+    /*parte dos spoilers com js*/
+    .spoiler {
+    background-color: rgba(61, 70, 67, 0.8);
+    color: transparent;
+    cursor: pointer;
+    padding: 0 3px;
+    border-radius: 3px;
+    user-select: none;
+    }
+    .spoiler.revelado {
+        background-color: #36393f;
+        color: rgba(127, 255, 212, 0.8);
+        user-select: text;
+        text-shadow: 0 0 6px rgba(127, 255, 212, 0.8);
+    }
+
 }
 section {
     text-align: center;
