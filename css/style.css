@@ -7,7 +7,6 @@ body {
     p{
         margin-top: 8px;
     }
-
     /*wallpaper do site*/
     background-image: url("../assets/images/background-principal.jpg");
     background-size: cover;
@@ -36,10 +35,26 @@ body {
         text-shadow: 0 0 6px rgba(127, 255, 212, 0.8);
     }
     
-    /*quero deixar uma parte destacada, aí é so usar essa funçao pra deixar tudo amarelo e com uma fonte diferente*/
-    .highlight {
-        color: #ffee00;
-        font-family: sans-serif; 
+    /*algumas classes pra mudar coisas especificas*/
+    .letrasmaiores {
+        font-size: 30px;
+    }
+    .maisespaçobaixo{
+        margin-bottom: 50px;
+    }
+    .maisespaçocima{
+        margin-top: 50px;
+    }
+    .listahorizontal{
+        display: flex;
+        list-style: none;
+        gap: 30px;
+        padding: 0;
+        justify-content: center;
+    }
+    /*isso é pra quando vc clicar em um botao que te leva pra outra parte da pagina. com esse smooth ele n pula de uma vez*/
+    html{
+        scroll-behavior: smooth;
     }
 
 /* tambem é de centralização, mas nao é no body, aí tem que botar fora*/
