@@ -52,6 +52,9 @@ body {
         padding: 0;
         justify-content: center;
     }
+    .imagemlink{
+        
+    }
     /*essa classe especificamente é pra mudar como alguns links ficam*/
     .rolardentrodapagina a {
         font-family: 'Space Mono', monospace;

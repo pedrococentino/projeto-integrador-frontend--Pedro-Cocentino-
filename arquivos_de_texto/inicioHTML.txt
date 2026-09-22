@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Outer Wilds - Sol</title>
+    <title>Outer Wilds - PLANETA X</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <link rel="icon" type="image/jpg" href="../assets/images/favicon.jpg">
     <link rel="stylesheet" href="../css/style.css">
