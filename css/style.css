@@ -52,14 +52,19 @@ body {
         padding: 0;
         justify-content: center;
     }
-    .imagemlink{
-        
-    }
     /*essa classe especificamente é pra mudar como alguns links ficam*/
     .rolardentrodapagina a {
         font-family: 'Space Mono', monospace;
         color: #7fffd4;
         text-shadow: 0 0 15px rgba(127, 255, 212, 0.8);
+    }
+    .imagemlinkaumenta img{
+        height: 100px;
+        width: auto;
+        transition: transform 0.1s ease;
+    }
+    .imagemlinkaumenta img:hover{
+        transform: scale(1.2);
     }
 }
 /* rolar suavemente*/
