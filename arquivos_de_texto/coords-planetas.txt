@@ -1,0 +1,9 @@
+sol - 0, 333 px 120 radius
+gemeos - 200, 350 px 15 radius // 200, 314 px 16 radius
+pedra de lia - 286, 379 px 11 radius
+recanto lenhoso - 330, 333 px 22 radius
+vale incerto - 508, 333 px 27 radius
+luzeiro do vale - 540, 264 px 15 radius
+profundezas do gigante - 716, 333 px 66 radius 
+lua quantica - 656, 462 px 15 radius
+abrolho sombrio - 897, 333 px 70 radius
