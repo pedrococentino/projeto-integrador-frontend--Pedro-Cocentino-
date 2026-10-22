@@ -34,7 +34,21 @@ body {
         user-select: text;
         text-shadow: 0 0 6px rgba(127, 255, 212, 0.8);
     }
-    
+    .spoiler:has(img) {
+    display: inline-block;
+    overflow: hidden;
+    line-height: 0;
+    background: none;
+    }
+
+    .spoiler img {
+        filter: blur(30px);
+        transition: filter 0.3s ease;
+    }
+
+    .spoiler.revelado img {
+        filter: none;
+    }
     /*algumas classes pra mudar coisas especificas*/
     .letrasmaiores {
         font-size: 30px;
