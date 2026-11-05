@@ -22,6 +22,7 @@ body {
     /*parte dos spoilers com js*/
     .spoiler {
     background-color: rgba(61, 70, 67, 0.8);
+    text-shadow: 0 0 0.375em rgba(127, 255, 212, 0.8);
     color: transparent;
     cursor: pointer;
     padding: 0 3px;
@@ -48,6 +49,22 @@ body {
 
     .spoiler.revelado img {
         filter: none;
+    }
+    .spoiler:has(video) {
+        display: inline-block;
+        overflow: hidden;
+        line-height: 0;
+        background: none;
+        padding: 0;
+    }
+    
+    .spoiler video {
+        filter: blur(30px);
+        transition: filter 0.3s ease;
+    }
+
+    .spoiler.revelado video {
+        filter: none
     }
     /*algumas classes pra mudar coisas especificas*/
     .letrasmaiores {
