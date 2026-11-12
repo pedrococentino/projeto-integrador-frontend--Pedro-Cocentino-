@@ -6,6 +6,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <link rel="icon" type="image/jpg" href="../assets/images/favicon.jpg">
     <link rel="stylesheet" href="../css/style.css">
+    <a href="../index.html" class="imagemlinkaumenta alinharesquerda">
+        <img src="../assets/images/naveow.png" alt="Ícone do botão" width="250" height="300">
+    </a>
 </head>
     <body>
         <header>
