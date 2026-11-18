@@ -67,6 +67,11 @@ body {
         filter: none
     }
     /*algumas classes pra mudar coisas especificas*/
+    .imagemmenor{
+        width: 720px;
+        max-width: 100%;
+        height: auto;
+    }
     .letrasmaiores {
         font-size: 30px;
     }
@@ -83,10 +88,19 @@ body {
         padding: 0;
         justify-content: center;
     }
-    .alinharesquerda img{
-        float: left;
-        width: 250px;
-        height: 300px;
+    .botaonave {
+        position: fixed;
+        left: 0;
+        top: 0px;
+        z-index: 9999;
+        width: 100px;
+        margin: 0;
+        padding: 0;
+    }
+    .botaonave img {
+        display: block;
+        width: 100%;
+        height: auto;
     }
     /*essa classe especificamente é pra mudar como alguns links ficam*/
     .rolardentrodapagina a {
