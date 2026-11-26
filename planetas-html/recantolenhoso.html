@@ -2,17 +2,140 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Outer Wilds - recanto lenhoso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Outer Wilds - Recanto Lenhoso</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/jpg" href="../assets/images/favicon.jpg">
+    <link rel="icon" type="image/jpeg" href="../assets/images/favicon.jpg">
     <link rel="stylesheet" href="../css/style.css">
 </head>
     <body>
         <header>
+            <a href="mapa.html" class="botaonave imagemlinkaumenta">
+                <img src="../assets/images/naveow.png" alt="Voltar ao mapa do sistema solar" width="400" height="400">
+            </a>
+            <h1>Bem-vindo ao Recanto Lenhoso!</h1>
         </header>
         <main>
-            <img src="../assets/images/construcao.png" alt="em construção">
+            <section>
+                <h2>Em casa, antes da viagem</h2>
+                <p>O Recanto Lenhoso (Timber Hearth, em inglês) é o planeta natal dos lenhosos, a espécie que você controla. Ele é pequeno, cheio de árvores, e é aqui que toda expedição começa: você acorda ao lado de uma fogueira, no meio da única vila do sistema solar.</p>
+                <p>A vila fica dentro de uma cratera grande, numa região com tanta atividade de gêiseres que as erupções quase nunca param. Foi observando esses gêiseres, fortes o bastante para jogar coisas em órbita, que os lenhosos aprenderam, na base da tentativa e erro, a lançar objetos ao espaço e depois a construir naves.</p>
+            </section>
+            <section>
+                <h2>O que ver por aqui</h2>
+                <p>O Observatório funciona como museu e centro de pesquisa. Ele guarda objetos que os astronautas trouxeram de outros lugares do sistema solar, e é lá que você precisa pegar os códigos de lançamento com Hornfels antes de poder viajar.</p>
+                <p>A torre de lançamento é uma árvore oca com uma plataforma no topo, e é nela que sua nave começa. O elevador só funciona depois que você consegue os códigos.</p>
+                <p>O programa espacial se chama Outer Wilds Ventures e foi fundado por quatro lenhosos: Hornfels, Gossan, Slate e Feldspar. Para treinar novos astronautas existe até uma caverna de gravidade zero bem no centro do planeta.</p>
+                <p>O Recanto Lenhoso também tem uma lua, a Pedra de Lia, que é a primeira parada de muita gente.</p>
+            </section>
+            <section>
+                <h2>Lugares do Recanto Lenhoso</h2>
+                <table>
+                    <caption>Os principais pontos do planeta</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Lugar</th>
+                            <th scope="col">O que é</th>
+                            <th scope="col">Para que serve</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Vila</td>
+                            <td>A única vila do sistema solar, dentro de uma cratera com gêiseres</td>
+                            <td>Ponto de partida da expedição e lugar para aprender os controles</td>
+                        </tr>
+                        <tr>
+                            <td>Observatório</td>
+                            <td>Museu e centro de pesquisa</td>
+                            <td>Guarda objetos de outros lugares e é onde você pega os códigos de lançamento com Hornfels</td>
+                        </tr>
+                        <tr>
+                            <td>Torre de lançamento</td>
+                            <td>Uma árvore oca com uma plataforma no topo</td>
+                            <td>É de onde a sua nave sai, mas o elevador só funciona depois dos códigos</td>
+                        </tr>
+                        <tr>
+                            <td>Caverna de gravidade zero</td>
+                            <td>Fica bem no centro do planeta</td>
+                            <td>Treinar novos astronautas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h2>Dica para quem está começando</h2>
+                <p>Se esta é a sua primeira vez em Outer Wilds, aproveite a vila para aprender os controles. Converse com todo mundo, entre no Observatório e olhe os objetos expostos: muita coisa que você vai encontrar pelo sistema solar já aparece por aqui.</p>
+            </section>
+            <section>
+                <h2>Crie o seu planeta</h2>
+                <p>Inventou um planeta para o sistema solar de Outer Wilds? Registre aqui. E nada de spoilers de verdade, combinado?</p>
+                <form id="form-planeta" action="#" method="post">
+                    <fieldset>
+                        <legend>Dados do explorador</legend>
+
+                        <label for="nome-explorador">Seu nome de explorador</label>
+                        <input type="text" id="nome-explorador" name="nome-explorador" minlength="2" maxlength="30" autocomplete="name" required>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+
+                        <label for="data-jogatina">Quando você jogou Outer Wilds pela primeira vez?</label>
+                        <input type="date" id="data-jogatina" name="data-jogatina" min="2019-05-28">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Dados do planeta</legend>
+
+                        <label for="nome-planeta">Nome do planeta (de 3 a 30 letras)</label>
+                        <input type="text" id="nome-planeta" name="nome-planeta" pattern="[A-Za-zÀ-ÿ ]{3,30}" title="Use de 3 a 30 letras e espaços, sem números." required>
+
+                        <label for="tipo-planeta">Tipo de planeta</label>
+                        <select id="tipo-planeta" name="tipo-planeta" required>
+                            <option value="" selected disabled>Escolha um tipo</option>
+                            <option value="rochoso">Rochoso</option>
+                            <option value="oceanico">Oceânico</option>
+                            <option value="gasoso">Gasoso</option>
+                            <option value="gelado">Gelado</option>
+                            <option value="vulcanico">Vulcânico</option>
+                            <option value="desertico">Desértico</option>
+                        </select>
+
+                        <label for="numero-luas">Quantas luas ele tem? (de 0 a 5)</label>
+                        <input type="number" id="numero-luas" name="numero-luas" min="0" max="5" step="1" value="0">
+
+                        <label for="descricao-planeta">Descreva o seu planeta (até 300 caracteres)</label>
+                        <textarea id="descricao-planeta" name="descricao-planeta" rows="4" maxlength="300"></textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>O planeta é habitado?</legend>
+                        <div class="opcao">
+                            <input type="radio" id="habitado-sim" name="habitado" value="sim" required>
+                            <label for="habitado-sim">Sim</label>
+                        </div>
+                        <div class="opcao">
+                            <input type="radio" id="habitado-nao" name="habitado" value="nao">
+                            <label for="habitado-nao">Não</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="opcao">
+                        <input type="checkbox" id="autorizo" name="autorizo" required>
+                        <label for="autorizo">Autorizo que o meu planeta apareça na wiki</label>
+                    </div>
+
+                    <button type="submit">Enviar planeta</button>
+                    <p id="aviso-form" role="status"></p>
+                </form>
+            </section>
+            <p>Quer visitar outro lugar? Clique na navezinha no canto da tela para voltar ao mapa.</p>
         </main>
-        <script src="js/spoiler.js"></script>
+        <footer>
+            <p>Projeto de fã sem fins lucrativos. Outer Wilds é da Mobius Digital e foi publicado pela Annapurna Interactive.</p>
+            <p>Saiba mais no <a href="https://www.mobiusdigitalgames.com/outer-wilds.html" target="_blank" rel="noopener noreferrer">site oficial do jogo</a> e leia a <a href="https://www.mobiusdigitalgames.com/fan-content-policy.html" target="_blank" rel="noopener noreferrer">política de conteúdo de fãs</a>.</p>
+        </footer>
+        <script src="../js/spoiler.js"></script>
+        <script src="../js/formulario.js"></script>
     </body>
 </html>
